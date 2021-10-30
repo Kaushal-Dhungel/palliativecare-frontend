@@ -1,5 +1,4 @@
-# Aashraya
-
+# Palliative Care
 **Important**
 
 *The frontend and the backend of Aashraya are entirely separated and are kept in different repositories*
