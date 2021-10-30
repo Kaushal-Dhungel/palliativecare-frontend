@@ -43,7 +43,7 @@ const UserProfilee = ({ isAuthenticated, onAuthLogout }) => {
   useEffect(() => {
 
     // when page is rendered fetch items
-    const fetchData =  () => {
+    const fetchData = async () => {
       const token = localStorage.getItem("token");
 
       const config = {
@@ -54,7 +54,7 @@ const UserProfilee = ({ isAuthenticated, onAuthLogout }) => {
       };
 
       try {
-          const res =  axios.get(
+          const res = await axios.get(
             `${process.env.REACT_APP_HEROKU_URL}/profile/`,
             config
           );
