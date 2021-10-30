@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import ProfileImg from '../imgs/doc1.png';
 import SchoolIcon from '@material-ui/icons/School';
 
 const Cards = ({item}) => {
