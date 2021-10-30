@@ -323,7 +323,7 @@ const ProfileEdit = ( {isAuthenticated, onAuthLogout}) => {
                               </datalist>
 
                           <input name="working_hours" className="form_input" type="text"
-                            value={item.working_hours} onChange={changeFn} placeholder="Favourite Sport/s, separate with comma" autoComplete="off"/>
+                            value={item.working_hours} onChange={changeFn} placeholder="Working Hours" autoComplete="off"/>
 
                           <input name="facebook_link" className="form_input" type="text"
                             value={item.facebook_link} onChange={changeFn} placeholder="Faccebook Link" autoComplete="off"/>

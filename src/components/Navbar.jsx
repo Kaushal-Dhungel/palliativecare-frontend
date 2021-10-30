@@ -8,7 +8,7 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 // import AutoStoriesIcon from '@material-ui/icons/AutoStories';
 // import HistoryEduIcon from '@material-ui/icons/HistoryEdu';
 import CreateIcon from '@material-ui/icons/Create';
-import logoImg from '../imgs/logo.png';
+import logoImg from '../imgs/cancer_logo.png';
 
 import { Flip } from "react-awesome-reveal";
 

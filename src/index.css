@@ -497,7 +497,6 @@ form {
 }
 
 @media screen and (max-width: 780px) {
-
 	form {
 		padding: 0 10px;
 	}
@@ -513,7 +512,6 @@ form {
 	justify-content: center;
 	align-items: center;
 }
-
 
 /* ------- LogOut Page --------- */
 .logout_page {
@@ -684,9 +682,13 @@ form {
 
 }
 
-
 .services_box {
 	border-radius: 10px;
 	background-color: #343a40;
 	min-height: 280px;
+}
+
+.stories_section {
+	display: flex;
+	justify-content: center;
 }

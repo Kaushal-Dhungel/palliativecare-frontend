@@ -17,17 +17,11 @@ export const searchPlaces = (value) => {
 }
 
 export const specialization = [
-    "Allergy and Immunology",
-    "Anesthesiology",
-    "Dermatology",
-    "Diagnostic Radiology",
-    "Neurology",
-    "Obstetrics and Gynecology",
-    "Ophthalmology",
-    "Pathology",
-    "Pediatrics",
-    "Physical Medicine and Rehabilitation",
-    "Psychiatry",
-    "Urology",
-    "Urology"
+    "Medical Oncologist",
+    "Surgical Oncologist",
+    "Radiation Oncologist",
+    "Gynecologic Oncologist",
+    "Pediatric Oncologist",
+    "Hematologist-Oncologist",
+    "Neuro-Oncologist",
 ]

@@ -16,8 +16,6 @@ const Item = (props) => {
     const[fetching,setFetching] = useState(true)
     const[filters,setFilters] = useState({
         identity:"",
-        religion:"",
-        ethnicity:"",
         language:"",
         title:""
     })
@@ -28,8 +26,6 @@ const Item = (props) => {
                 const res = await axios.get(`${process.env.REACT_APP_HEROKU_URL}/profile/search/${location}/`,{
                     params: {
                         identity:"",
-                        religion:"",
-                        ethnicity:"",
                         language:"",
                         title:""
                     }
@@ -71,8 +67,6 @@ const Item = (props) => {
         setFilters((prevVal) => {
             return {
                 identity:"",
-                religion:"",
-                ethnicity:"",
                 language:"",
                 title:""
             }
@@ -116,28 +110,12 @@ const Item = (props) => {
                                         <option value= 'Female'/>
                                         <option value= 'LGBTQ+'/>
                                     </datalist>
-                            </span>
-
-                            <span>
-                                <p> Filter by Ethnicity</p>
-                                <input name="ethnicity" className="formStyle" type="text" list = "ethnicity"
-                                    value={filters.ethnicity} onChange={changeFn} placeholder="Example: African"autoComplete="off"/>
-
-                                    <datalist id="ethnicity">
-                                        <option value= 'Asian'/>
-                                        <option value= 'South Asian'/>
-                                        <option value= 'African'/>
-                                        <option value= 'American Biracial'/>
-                                        <option value= 'White'/>
-                                        <option value= 'Jew'/>
-                                        <option value= 'Arab'/>
-                                    </datalist> 
-                            </span>        
+                            </span>       
 
                             <span>
                                 <p> Filter by Specialization </p>
                                     <input name="title" className="formStyle" type="text" list = "titles"
-                                    value={filters.title} onChange={changeFn} placeholder="Example: Obstetrics and Gynecology" autoComplete="off"/>
+                                    value={filters.title} onChange={changeFn} placeholder="Example: Radiation Oncologist" autoComplete="off"/>
                                     <datalist id="titles">
                                         {
                                         specialization.map((item,index) => {
@@ -147,11 +125,6 @@ const Item = (props) => {
                                         })
                                         }
                                     </datalist>
-                            </span>
-                            <span>
-                                <p> Filter by Religion</p>
-                                <input name="religion" className="formStyle" type="text"
-                                value={filters.religion} onChange={changeFn} placeholder="Example: Hindu" autoComplete="off"/>
                             </span>
 
                             <span>

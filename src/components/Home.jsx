@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-import landingImg from '../imgs/bcd.png';
+import landingImg from '../imgs/landing.png';
 
 import SearchIcon from '@material-ui/icons/Search';
-import { Bounce,Zoom} from "react-awesome-reveal";
+// import { Bounce,Zoom} from "react-awesome-reveal";
 import {  Services, HowItWorks } from './Components';
 import { searchPlaces } from './utils';
 
@@ -27,7 +27,6 @@ const Home = ({isAuthenticated})=> {
         .catch (err => {
             console.log(err)
         })
-
     }
 
     // when the search button is clicked
@@ -44,9 +43,9 @@ const Home = ({isAuthenticated})=> {
     return (
             <div>
                 <div className="landing">
-                    <Zoom>
+                    {/* <Zoom> */}
                         <div className="text_part">
-                            <h2> Find your perfect Doctors with us. </h2>
+                            <h2> Search your doctor here. </h2>
                             <div className="search">
                                 <input 
                                 className = "formStyle"
@@ -54,7 +53,7 @@ const Home = ({isAuthenticated})=> {
                                 value = {searchValue}
                                 onChange={handleChange}
                                 list="cityname"
-                                placeholder = "Search your city. Ex:- Haldibari, Mechi"
+                                placeholder = "Search your city. Ex:- Manhattan,New York, USA"
                                 required
                                 />
                                 <datalist id="cityname">
@@ -75,7 +74,7 @@ const Home = ({isAuthenticated})=> {
                             </div>
 
                         </div>
-                    </Zoom>
+                    {/* </Zoom> */}
 
                     <div className="logo_part">
                         <img src={landingImg} alt="" height= "500px" width = "650px"/>
@@ -88,9 +87,9 @@ const Home = ({isAuthenticated})=> {
                     isAuthenticated ? null :
                     <div>
                         <div style = {{marginTop:"35vh"}}>
-                            <Bounce>
+                            {/* <Bounce> */}
                                 <h4 className = "testi_heading"> How It Works ?? </h4>
-                            </Bounce>
+                            {/* </Bounce> */}
                         </div>
                         <HowItWorks />
                     </div>
