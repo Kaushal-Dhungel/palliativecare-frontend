@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import landingImg from '../imgs/landing.png';
 
 import SearchIcon from '@material-ui/icons/Search';
-// import { Bounce,Zoom} from "react-awesome-reveal";
+import { Bounce,Zoom} from "react-awesome-reveal";
 import {  Services, HowItWorks } from './Components';
 import { searchPlaces } from './utils';
 
@@ -43,7 +43,7 @@ const Home = ({isAuthenticated})=> {
     return (
             <div>
                 <div className="landing">
-                    {/* <Zoom> */}
+                    <Zoom>
                         <div className="text_part">
                             <h2> Search your doctor here. </h2>
                             <div className="search">
@@ -74,7 +74,7 @@ const Home = ({isAuthenticated})=> {
                             </div>
 
                         </div>
-                    {/* </Zoom> */}
+                    </Zoom>
 
                     <div className="logo_part">
                         <img src={landingImg} alt="" height= "500px" width = "650px"/>
@@ -87,9 +87,9 @@ const Home = ({isAuthenticated})=> {
                     isAuthenticated ? null :
                     <div>
                         <div style = {{marginTop:"35vh"}}>
-                            {/* <Bounce> */}
+                            <Bounce>
                                 <h4 className = "testi_heading"> How It Works ?? </h4>
-                            {/* </Bounce> */}
+                            </Bounce>
                         </div>
                         <HowItWorks />
                     </div>
